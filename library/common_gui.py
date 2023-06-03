@@ -502,15 +502,16 @@ def set_model_list(
 
 
 def gradio_config():
-    with gr.Accordion('Configuration file', open=False):
+    with gr.Accordion('Configuration file', open=True):
         with gr.Row():
-            button_open_config = gr.Button('Open 📂', elem_id='open_folder')
+            #button_open_config = gr.Button('Open 📂', elem_id='open_folder')
             button_save_config = gr.Button('Save 💾', elem_id='open_folder')
             button_save_as_config = gr.Button(
                 'Save as... 💾', elem_id='open_folder'
             )
             config_file_name = gr.Textbox(
                 label='',
+                value='/content/kohya_ss/presets/lora/LORA.json',
                 placeholder="type the configuration file path or use the 'Open' button above to select it...",
                 interactive=True,
             )
