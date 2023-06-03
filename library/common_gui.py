@@ -511,7 +511,7 @@ def gradio_config():
             )
             config_file_name = gr.Textbox(
                 label='',
-                value='/content/kohya_ss/presets/lora/LORA.json',
+                value='/content/kohya_ss/presets/lora/LoRA.json',
                 placeholder="type the configuration file path or use the 'Open' button above to select it...",
                 interactive=True,
             )
