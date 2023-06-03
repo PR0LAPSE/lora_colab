@@ -504,7 +504,7 @@ def set_model_list(
 def gradio_config():
     with gr.Accordion('Configuration file', open=True):
         with gr.Row():
-            #button_open_config = gr.Button('Open 📂', elem_id='open_folder')
+            button_open_config = gr.Button('Open 📂', elem_id='open_folder')
             button_save_config = gr.Button('Save 💾', elem_id='open_folder')
             button_save_as_config = gr.Button(
                 'Save as... 💾', elem_id='open_folder'
